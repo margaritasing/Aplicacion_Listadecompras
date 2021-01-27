@@ -14,6 +14,10 @@ export class ItemComponent implements OnInit {
   @Output() toggleItem: EventEmitter<Item> = new EventEmitter();
 
 
+  /*aqui cada vez que se caiga la suma y la resta de los item
+  @Output() toggleItem: EventEmitter<Item> = new EventEmitter();*/
+
+
   constructor() { }
 
   ngOnInit() {
@@ -26,6 +30,7 @@ export class ItemComponent implements OnInit {
   onToggle(item: Item){
     item.completed = !item.completed;
     this.toggleItem.emit(item);
+
 
   };
 

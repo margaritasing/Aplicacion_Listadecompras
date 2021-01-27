@@ -8,6 +8,7 @@ import { ItemComponent } from './components/item/item.component';
 import { TotalComponent } from './components/total/total.component';
 import { AdditemComponent } from './components/additem/additem.component';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -16,10 +17,11 @@ import { FormsModule } from '@angular/forms';
     ItemsComponent,
     ItemComponent,
     TotalComponent,
-    AdditemComponent
+    AdditemComponent,
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
   ],
   providers: [],
