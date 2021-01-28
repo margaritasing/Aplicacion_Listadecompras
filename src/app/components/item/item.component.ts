@@ -30,6 +30,7 @@ export class ItemComponent implements OnInit {
   onToggle(item: Item){
     item.completed = !item.completed;
     this.toggleItem.emit(item);
+    //this.toggleItem.emit(item);
 
 
   };
